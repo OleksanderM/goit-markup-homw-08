@@ -1,0 +1,39 @@
+.description {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.description__list {
+    display: flex;
+    gap: 30px;
+    flex-basis: calc((100% - 60px) / 3);
+}
+
+.description__title {
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #212121;
+}
+
+.description__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+
+.description__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    width: 270px;
+    height: 120px;
+    background: #F5F4FA;
+    border-radius: 4px;
+}

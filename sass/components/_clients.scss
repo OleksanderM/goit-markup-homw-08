@@ -1,0 +1,33 @@
+.client {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    background-color:#FFFFFF;
+}
+.client__list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.client__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    color: #AFB1B8;
+    transition: border-color var(--time-and-function), color var(--time-and-function);
+
+&:hover,
+&:focus {
+    border: 1px solid #2196F3;
+    color: #2196F3;
+        }
+}
+
+.client__icon {
+    fill: currentColor;
+}
+

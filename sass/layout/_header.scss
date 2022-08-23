@@ -1,0 +1,106 @@
+.contact__icon {
+    margin-right: 10px;
+    fill: currentColor;
+}
+
+.contact__margin {
+    margin-left: auto;
+    margin-right: 50px;
+}
+
+.contact__detail {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: #757575;
+
+    transition: color var(--time-and-function);
+
+    &:hover,
+    &:focus {
+            color: #2196F3;
+        }
+}
+
+.page__header {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: #000000;
+}
+
+.page__logo {
+    color: #2196F3;
+}
+
+.page__header-container {
+    display: flex;
+    align-items: center;
+}
+
+.page__nav {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    margin-right: 90px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu__item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.page__header {
+    background: #FFFFFF;
+}
+
+.menu__link {
+    position: relative;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: #212121;
+
+    display: block;
+    padding: 32px 0;
+    transition: color var(--time-and-function);
+
+    &:hover,
+    &:focus {
+            color: var(--accent-color);
+        }
+}
+
+.menu__link.current {
+    color: #2196F3;
+
+    &::after {
+            position: absolute;
+            display: block;
+            bottom: -1px;
+            height: 4px;
+            width: 100%;
+            content: '';
+            background-color: #2196F3;
+            border-radius: 2px;
+        }
+}
+
+
+
