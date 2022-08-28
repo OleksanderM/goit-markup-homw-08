@@ -1,14 +1,44 @@
-.contact__icon {
-    margin-right: 10px;
-    fill: currentColor;
+.page__header {
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #ececec;
+}
+.logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: #000000;
 }
 
-.contact__margin {
-    margin-left: auto;
-    margin-right: 50px;
+@media screen and (max-width: 767px) {
+    .page__header {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
 }
 
-.contact__detail {
+.page__header-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.page__logo {
+    color: #2196F3;
+}
+
+@media screen and (max-width: 767px) {
+    .menu {
+        display: none;
+    }
+    .contact__list{
+        display: none;
+    }
+   
+}
+.contact__link {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -19,88 +49,108 @@
 
     &:hover,
     &:focus {
-            color: #2196F3;
+        color: #2196F3;
+    }
+}
+
+.contact__icon {
+    margin-right: 10px;
+    fill: currentColor;
+}
+
+@media screen and (min-width: 768px) {
+    .logo {
+        margin-right: 90px;
+    }
+
+    .mobile-menu-btn {
+        display: none;
+    }
+    .page__nav {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .menu {
+        display: flex;
+    }
+
+    .menu__item {
+        margin-right: 50px;
+    }
+
+    .menu__link {
+        position: relative;
+    
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        color: #212121;
+    
+        display: block;
+        padding: 32px 0;
+        transition: color var(--time-and-function);
+    
+        &:hover,
+        &:focus {
+        color: var(--accent-color);
         }
-}
-
-.page__header {
-    padding-top: 0px;
-    padding-bottom: 0px;
-}
-
-.logo {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
-    color: #000000;
-}
-
-.page__logo {
-    color: #2196F3;
-}
-
-.page__header-container {
-    display: flex;
-    align-items: center;
-}
-
-.page__nav {
-    display: flex;
-    align-items: center;
-}
-
-.logo {
-    margin-right: 90px;
-}
-
-.menu {
-    display: flex;
-    align-items: center;
-}
-
-.menu__item:not(:last-child) {
-    margin-right: 50px;
-}
-
-.page__header {
-    background: #FFFFFF;
-}
-
-.menu__link {
-    position: relative;
-
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: #212121;
-
-    display: block;
-    padding: 32px 0;
-    transition: color var(--time-and-function);
-
-    &:hover,
-    &:focus {
-            color: var(--accent-color);
+    }
+    
+    .menu__link.current {
+        color: #2196F3;
+    
+        &::after {
+        position: absolute;
+        display: block;
+        bottom: -1px;
+        height: 4px;
+        width: 100%;
+        content: '';
+        background-color: #2196F3;
+        border-radius: 2px;
         }
-}
-
-.menu__link.current {
-    color: #2196F3;
-
-    &::after {
-            position: absolute;
-            display: block;
-            bottom: -1px;
-            height: 4px;
-            width: 100%;
-            content: '';
-            background-color: #2196F3;
-            border-radius: 2px;
+    }
+    .contact__item {
+        &:first-child {
+            margin-bottom: 10px;
         }
+    }
+
+    .contact__link {
+        display: flex;
+        align-items: center;
+    }
 }
 
+@media screen and (min-width: 1200px) {
+    .logo {
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.19;
+        }
 
+    .contact__link {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+    }
 
+    .contact__list {
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+    }
+
+    .contact__item {
+        &:first-child {
+            margin-bottom: 0;
+        }
+
+        &:not(:last-child) {
+            margin-right: 50px;
+        }
+    }
+}

@@ -5,6 +5,7 @@
 }
 .client__list {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
 }
@@ -13,7 +14,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 170px;
+    width: 210px;
     height: 92px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
@@ -31,3 +32,14 @@
     fill: currentColor;
 }
 
+@media screen and (min-width: 768px) {
+    .client__link {
+        width: 226px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .client__link {
+        width: 170px;
+    }
+}
