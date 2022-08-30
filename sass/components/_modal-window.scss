@@ -1,10 +1,11 @@
+
+
 .modal {
     position: relative;
     background-color: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
-    width: 528px;
-    height: 581px;
+    
     padding: 40px;
 }
 
@@ -122,15 +123,15 @@
 
 .deal {
     font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.16;
     color: #2196F3;
 }
 
 .deal__label {
     font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.16;
     color: #757575;
     padding-left: 35px;
     margin-bottom: 30px;
@@ -190,4 +191,34 @@
     background-color: #188CE8;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
         }
+}
+@media screen and (max-width: 767px) {
+    .modal {
+        width: 450px;
+        height: 609px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .modal {
+        width: 450px;
+        height: 609px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .modal {
+        width: 528px;
+        height: 581px;
+    }
+
+    .deal {
+        font-size: 14px;
+        line-height: 1.71;
+    }
+
+    .deal__label {
+        font-size: 14px;
+        line-height: 1.71;
+    }
 }

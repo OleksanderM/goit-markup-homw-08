@@ -29,9 +29,11 @@
 
 .adress__list {
     line-height: 1.71;
+    
 }
 
 .adress__map {
+    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
@@ -40,6 +42,7 @@
 }
 
 .adress__link {
+    font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
@@ -107,7 +110,6 @@
 }
 
 .footer__email-btn {
-    display: flex;
     align-items: center;
     justify-content: space-between;
     width: 200px;
